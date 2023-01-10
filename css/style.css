@@ -54,11 +54,22 @@ a {
 
 .button {
     border-radius: 20px;
+    display: block;
+    width: max-content;
 }
 
 .button-white {
     color: black;
     background-color: white;
+}
+
+.button-blue {
+    color: white;
+    background-color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 46px;
+    padding: 0 46px;
 }
 
 /* HEADER */
@@ -113,7 +124,7 @@ a {
     border-radius: 15px;
 }
 
-.demo .row {
+.demo .row:not(.no-gutter) {
     margin: 0 -10px;
     row-gap: 20px;
 }
@@ -128,6 +139,60 @@ a {
     padding: 0 10px;
 }
 
+.col-60 {
+    flex-basis: 60%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+}
+
+.card.big {
+    padding-bottom: 0;
+}
+
+.title,
+.title-big {
+    font-size: 21px;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5a6e7f;
+    line-height: 30px;
+}
+
+.apple {
+    margin-right: 10px;
+}
+
+.title,
+.content.big,
+.col-60 .button {
+    margin-bottom: 25px;
+}
+
+.content.big {
+    margin-top: 25px;
+}
+
+.demo-img {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.demo .col-4 {
+    text-align: center;
+}
+
+.demo .col-4 i {
+    font-size: 60px;
+    color: var(--blue);
+    margin-bottom: 25px;
+}
 
 /* RESPONSIVE DEMO SECTION */
 
