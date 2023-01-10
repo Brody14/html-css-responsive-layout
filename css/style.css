@@ -1,5 +1,5 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -85,6 +85,10 @@ a {
 
 @media screen and (max-width: 991px) {
 
+    .container {
+        padding: 15px 30px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -93,36 +97,43 @@ a {
         display: block;
     }
 
-    .main-header {
-        padding: 15px 31px;
-    }
-
 }
 
 /* MAIN */
 
 /* DEMO SECTION */
+.demo {
+    padding-top: 49px;
+    padding-bottom: 105px;
+}
 
 .card {
     background-color: var(--lightblue);
-    padding: 24px;
-    border-radius: ;
+    padding: 36px;
+    border-radius: 15px;
+}
+
+.demo .row {
+    margin: 0 -10px;
+    row-gap: 20px;
 }
 
 .col-8 {
     flex-basis: calc(100%*2/3);
+    padding: 0 10px;
 }
 
 .col-4 {
     flex-basis: calc(100%/3);
+    padding: 0 10px;
 }
 
 
-/* RESPONSIVE HERO SECTION */
+/* RESPONSIVE DEMO SECTION */
 
 @media screen and (max-width: 575px) {
 
-    .demo [class^=('col-')]{
+    .demo [class^='col-']{
         flex-basis: 100%;
     }
 
