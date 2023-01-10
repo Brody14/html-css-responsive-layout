@@ -158,7 +158,7 @@ a {
     font-weight: 700;
 }
 
-.content {
+.demo .content {
     font-size: 16px;
     font-weight: 700;
     color: #5a6e7f;
@@ -228,6 +228,7 @@ a {
 .strategic {
     background-color: var(--purple);
     padding: 120px 0 60px;
+    color: white;
 }
 
 .container.small {
@@ -241,8 +242,64 @@ a {
 
 .col-50 {
     flex-basis: calc(50% - 30px);
-    border: 2px solid black;
-    height: 200px;
+}
+
+.strategic-img {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+
+}
+
+.strategic-title {
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.stategic .content {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.col-50.white {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 130px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 33px;
+    color: black;
+    text-align: center;
+    padding: 33px 45px;
+}
+
+.wrapper img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-title {
+    font-size: 22px
+
+}
+
+.wrapper .content {
+    font-style: italic;
+
+}
+
+.arrow {
+    background-color: var(--purple);
+    border-radius: 50%;
+    width: max-content;
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+
 }
 
 @media screen and (max-width: 991px) {
@@ -250,4 +307,20 @@ a {
     .col-50 {
         flex-basis: 100%;
     }
+
+    .strategic img {
+        width: 100%;
+    }
+
+    .strategic-title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .strategic-title {
+        font-size: 30px;
+    }
+
 }
