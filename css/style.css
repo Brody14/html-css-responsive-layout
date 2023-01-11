@@ -166,13 +166,11 @@ a {
 .col-big {
     flex-basis: 0;
     flex-grow: 2;
-    border: 2px solid black;
 }
 
 .col-mini {
     flex-basis: 0;
     flex-grow: 1;
-    border: 2px solid black;
     position: relative;
 }
 
@@ -563,7 +561,7 @@ a {
 }
 
 .about-us .button-violet {
-    padding: 0 8px;
+    padding: 0 12px;
     font-weight: 300;
 }
 
