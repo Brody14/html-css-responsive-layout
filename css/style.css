@@ -173,6 +173,7 @@ a {
     flex-basis: 0;
     flex-grow: 1;
     border: 2px solid black;
+    position: relative;
 }
 
 .card.big {
@@ -412,6 +413,8 @@ a {
 }
 
 
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 991px) {
@@ -523,6 +526,53 @@ a {
 
 .about-us .row {
     gap: 100px;
+}
+
+.info-title {
+    font-size: 63px;
+    color: var(--purple);
+    margin-bottom: 45px;
+}
+
+.info-text {
+    font-size: 19px;
+    line-height: 2.3em;
+}
+
+.info-text.first {
+    margin-bottom: 53px;
+}
+
+.author-img {
+    margin-bottom: 24px;
+}
+
+.author-cit {
+    margin-bottom: 24px;
+}
+
+.author-cit p {
+    font-size: 28px;
+    color: var(--purple);
+    font-weight: 700;
+    
+}
+
+.about-us .button i {
+    margin-right: 8px;
+}
+
+.about-us .button-violet {
+    padding: 0 8px;
+    font-weight: 300;
+}
+
+.author-quote {
+    color: var(--purple);
+    font-size: 75px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* RESPONSIVE */
