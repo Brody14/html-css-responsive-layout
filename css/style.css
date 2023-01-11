@@ -449,6 +449,10 @@ a {
         padding-bottom: 23px;
     }
 
+    .round-img {
+        width: 100%;
+    }
+
    
 }
 
@@ -609,6 +613,15 @@ a {
         flex-basis: 100%;
         
     }
+
+    .author-img {
+        width: 60%;
+    }
+
+    .author-quote {
+        right: 125px;
+    }
+    
 }
 
 /* GET STARTED STYLE */
