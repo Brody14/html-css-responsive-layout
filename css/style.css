@@ -37,6 +37,7 @@ a {
     margin: 0 auto;
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +161,18 @@ a {
 
 .col-40 {
     flex-basis: 40%;
+}
+
+.col-big {
+    flex-basis: 0;
+    flex-grow: 2;
+    border: 2px solid black;
+}
+
+.col-mini {
+    flex-basis: 0;
+    flex-grow: 1;
+    border: 2px solid black;
 }
 
 .card.big {
@@ -494,5 +507,49 @@ a {
     .benefits-title {
         font-size: 32px;
 
+    }
+}
+
+/* ABOUT US SECTION */
+
+.about-us {
+    padding: 95px 0 150px;
+}
+
+.about-us .container {
+    padding: 0 40px;
+}
+
+
+.about-us .row {
+    gap: 100px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:991px) {
+
+
+    .about-us .row {
+        gap: 75px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .about-us {
+        padding: 90px 0 80px;
+    }
+
+    .about-us .row {
+        gap: 40px;
+    }
+
+
+    .about-us [class^='col-'] {
+        
+        flex-basis: 100%;
+        
     }
 }
