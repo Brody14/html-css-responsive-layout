@@ -33,16 +33,22 @@ a {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .container-mini {
-    max-width: 550px;
+    max-width: 610px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
-
+.container-micro {
+    max-width: 472px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
 
 .row {
@@ -115,10 +121,6 @@ a {
 /* RESPONSIVE HEADER */
 
 @media screen and (max-width: 991px) {
-
-    .container {
-        padding: 15px 30px;
-    }
 
     .header-nav {
         display: none;
@@ -662,4 +664,23 @@ a {
 
 .policy {
     text-decoration: underline;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background-color: var(--dark);
+    color: white;
+    font-weight: 300;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 65px;
+}
+
+.footer-link a{
+    text-decoration: underline;
+    color: var(--purple)
 }
