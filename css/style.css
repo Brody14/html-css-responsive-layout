@@ -128,7 +128,8 @@ a {
     border-radius: 15px;
 }
 
-.demo .row:not(.no-gutter) {
+.demo .row:not(.no-gutter),
+.benefits .row {
     margin: 0 -10px;
     row-gap: 20px;
 }
@@ -416,4 +417,25 @@ a {
     }
 
    
+}
+
+/* BENEFITS SECTION STYLE */
+
+.benefits {
+    padding: 60px 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 991px) {
+    .benefits .col-4 {
+        flex-basis: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .benefits .col-4 {
+        flex-basis: 100%;
+    }
 }
